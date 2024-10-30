@@ -1,0 +1,101 @@
+.bb-image-box-wrapper figure {
+  padding: 0px;
+  margin: 0px;
+}
+.bb-image-box-wrapper p {
+  margin: 10px 0;
+}
+.bb-image-box-wrapper h3 {
+  margin: 10px 0;
+}
+.bb-image-box-wrapper {
+  display: flex;
+}
+
+/* Disply Property */
+.bb-image-box-wrapper.bb-image-pos-left {
+  flex-direction: row;
+}
+.bb-image-box-wrapper.bb-image-pos-right {
+  flex-direction: row-reverse;
+}
+.bb-image-box-wrapper.bb-image-pos-center {
+  flex-direction: column;
+}
+
+/* Vertical Alignmet */
+.bb-image-box-wrapper.bb-content-pos-top {
+  align-items: flex-start;
+}
+.bb-image-box-wrapper.bb-content-pos-center {
+  align-items: center;
+}
+.bb-image-box-wrapper.bb-content-pos-bottom {
+  align-items: flex-end;
+}
+
+.bb-image-box-img {
+  display: inline-block;
+}
+/* Initial Width */
+.bb-image-box-img {
+  width: 30%;
+}
+/* Inital Marging */
+.bb-image-box-wrapper.bb-image-pos-left .bb-image-box-img {
+  margin-right: 10px;
+}
+.bb-image-box-wrapper.bb-image-pos-right .bb-image-box-img {
+  margin-left: 10px;
+}
+.bb-image-box-wrapper.bb-image-pos-center .bb-image-box-img {
+  margin-bottom: 10px;
+}
+
+.bb-image-box-img img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.bb-image-box-content {
+  width: 100%;
+}
+
+.wp-block-booster-blocks-image-box > .wp-block-button.has-custom-width {
+  max-width: none;
+}
+.wp-block-booster-blocks-image-box
+  .wp-block-button.has-custom-width
+  .wp-block-button__link {
+  width: 100%;
+}
+.wp-block-booster-blocks-image-box
+  .wp-block-button.has-custom-font-size
+  .wp-block-button__link {
+  font-size: inherit;
+}
+.wp-block-booster-blocks-image-box .wp-block-button.wp-block-button__width-25 {
+  width: calc(25% - (var(--wp--style--block-gap, 0.5em) * 0.75));
+}
+.wp-block-booster-blocks-image-box .wp-block-button.wp-block-button__width-50 {
+  width: calc(50% - (var(--wp--style--block-gap, 0.5em) * 0.5));
+}
+.wp-block-booster-blocks-image-box .wp-block-button.wp-block-button__width-75 {
+  width: calc(75% - (var(--wp--style--block-gap, 0.5em) * 0.25));
+}
+.wp-block-booster-blocks-image-box .wp-block-button.wp-block-button__width-100 {
+  width: calc(100% - (var(--wp--style--block-gap, 0.5em) * 0.25));
+}
+.wp-block-booster-blocks-image-box.bb-text-align-right .wp-block-button {
+  float: right;
+}
+.wp-block-booster-blocks-image-box.bb-text-align-left .wp-block-button {
+  float: left;
+}
+.wp-block-booster-blocks-image-box.bb-text-align-center .wp-block-button {
+  margin: auto;
+}
+
